@@ -106,7 +106,6 @@ class MeshWorldNormalMaterial extends ShaderMaterial {
             oldOnBeforeRender.call(this, renderer, scene, camera, geometry, material, group);
             if ("isMeshWorldNormalMaterial" in this.material && this.material.isMeshWorldNormalMaterial)
                 (this.material as MeshWorldNormalMaterial).uniforms.viewMatrixInverse.value.copy(camera.matrixWorld);
-
         };
     }
 }
